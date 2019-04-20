@@ -24,6 +24,24 @@ class Carousel {
     }
 }
 
+class CarouselImage {
+    /**
+     * 
+     * @param {HTMLImageElement} img 
+     */
+    constructor(img) {
+        this.img = img;
+    }
+
+    show() {
+        this.img.style.display = 'inline-block';
+    }
+
+    hide() {
+        this.img.style.display = 'none';
+    }
+}
+
 let carousel = new Carousel(document.querySelector('.carousel'));
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
