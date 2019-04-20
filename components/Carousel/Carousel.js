@@ -1,3 +1,11 @@
+/**
+ * Create carousel component with autosliding images that stop on mouseenter
+ * 
+ * @property {HTMLElement} element container element for carousel
+ * @property {Array} images array of CarouselImage objects
+ * @property {Object} buttons buttons to manually control carousel
+ * @property {Number} current index of currently visible CarouselImage
+ * */
 class Carousel {
 
 }
