@@ -21,7 +21,8 @@ class TabLink {
     
     // Check to see if this.tabData is equal to 'all'
     const selector = (this.tabData === 'all') ? '.card' : `[data-tab="${this.tabData}"]`;
-    this.cards = document.querySelectorAll(selector);
+    this.cards = [...document.querySelectorAll(selector)]
+        .map(card => new TabCard(card));
 
     // Add a click event that invokes this.selectTab
     this.tabElement.addEventListener('click', this.selectTab.bind(this));
