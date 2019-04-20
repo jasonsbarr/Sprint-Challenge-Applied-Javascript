@@ -42,6 +42,21 @@ class CarouselImage {
     }
 }
 
+class CarouselButton {
+    /**
+     * 
+     * @param {HTMLElement} element 
+     */
+    constructor (element) {
+        this.element = element;
+        this.direction = this.getButtonDirection()
+    }
+
+    getButtonDirection() {
+        return this.element.className.split('-')[0];
+    }
+}
+
 let carousel = new Carousel(document.querySelector('.carousel'));
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
